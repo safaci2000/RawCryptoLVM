@@ -2,4 +2,4 @@
 sudo umount loopback
 sudo vgchange -a n 
 sudo cryptsetup luksClose cryptoLoop
-sudo losetup -d /dev/loop0 
+sudo losetup -d /dev/loop0 && rm -fr loopback/
